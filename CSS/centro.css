@@ -96,7 +96,8 @@ hr {
   display: grid;
   place-items: center;
   padding: 32px;
-  background-color: white;
+  background: url(https://m.media-amazon.com/images/I/71Ve53uUy6L._AC_UF894,1000_QL80_.jpg) no-repeat;
+  background-size: 110%;
   transform: rotateY(180deg);
 }
 .flip-card:hover .flip-card-inner {
