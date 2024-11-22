@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cátlo de Videojuegos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/menu.css">
+
+    <!-importe iconos menu-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </head>
 <body>
     <div id="contenedor">
         <header>
-            <center><a href="https://es.cooltext.com"><img class="titulo" src="https://images.cooltext.com/5715677.png" width="1524" height="145" alt="CATALOGO DE VIDEOJUEGOS" /></a></center>
+            <center><img class="titulo" src="https://images.cooltext.com/5715677.png" width="1524" height="145" alt="CATALOGO DE VIDEOJUEGOS" /></center>
             
         </header>
 
@@ -17,14 +23,72 @@
 
             <section class="izquierda">
 
-                <center><nav>
-                    <a href="">Inicio</a>
-                    <br>
-                    <a href="">Juegos Destacados</a>
-                    <br>
-                    <a href="">Añadir Juego</a>
-                </nav>
-            </center>
+                <nav id="navbar">
+                    <ul class="navbar-items flexbox-col">
+                      <li class="navbar-logo flexbox-left">
+                        <a class="navbar-item-inner flexbox">
+                            <?xml version="1.0" encoding="UTF-8"?>
+                            <svg version="1.1" viewBox="0 0 2048 2048" width="512" height="512" xmlns="http://www.w3.org/2000/svg">
+                            <path transform="translate(485,324)" d="m0 0h54l31 3 29 5 24 6 33 11 23 10 17 9 12 6 20 12 18 12 5 2 55-17 37-10 38-8 40-6 29-3 31-2h87l39 3 35 4 35 6 36 8 35 10 45 14 6 1 24-16 26-15 28-14 26-10 18-6 28-7 29-5 31-3h54l33 3 36 6 32 8 26 8 33 13 33 16 23 13 14 9 12 8 19 14 11 9 13 11 15 14 18 18 7 8 13 15 10 13 13 18 13 20 15 26 12 24 12 29 12 36 7 27 5 25 4 30 2 25 2 53 25 394 12 186 1 12 2 2v91h-2l-5 24-6 20-6 16-11 23-11 18-10 14-8 10-9 10-6 7h-2v2l-8 7-14 12-16 11-20 12-23 11-19 7-28 7-26 4-16 1h-144l-14-2-13-5-11-7-10-10-15-23-16-26-15-23-9-15-12-19-15-24-14-22-13-21-12-19-15-24-12-19-13-21-14-22-16-26-14-22-60-96-6-9h-630l-11 17-11 18-11 17-16 26-24 38-10 16-13 21-24 38-45 72-14 22-11 18-10 16-14 22-15 24-12 19-25 40-8 10-7 7-14 8-15 5-11 1h-143l-26-2-26-5-26-8-21-9-16-8-19-12-12-9-11-9-10-9-14-14-9-11-10-13-12-19-12-23-6-15-7-21-7-32-1-2v-75l2-15 4-58 6-97 8-126 10-157 7-110 3-50 2-52 3-30 6-36 8-32 12-36 10-24 12-26 13-23 8-13 12-18 13-18 14-17 9-11h2l2-4 31-31 11-9 13-11 19-14 13-9 16-10 19-11 25-13 31-13 36-12 27-7 31-6 32-4zm25 130-25 1-33 4-30 7-26 8-26 11-22 11-20 12-14 10-16 12-10 9-8 7-20 20-7 8-13 16-9 13-11 17-10 18-12 25-10 27-8 30-5 27-3 37-2 50-10 155-11 176-6 94-10 159-3 46v14l2 16 6 20 8 17 8 12 9 11 9 9 15 11 19 10 14 5 16 3 8 1h106l6-7 7-12 14-22 12-19 13-21 12-19 15-24 12-19 60-96 36-57 16-26 36-57 16-26 13-20 6-8 5-5 7-6 16-8 8-2 17-1h687l23 1 13 4 11 6 8 6 10 11 15 24 13 21 15 24 24 38 30 48 12 19 30 48 12 19 8 13 24 38 13 21 15 24 24 38 10 16 12 19 11 17h108l18-3 16-5 16-8 14-9 13-11v-2l3-1 9-11 10-16 7-16 5-19 2-19-3-52-14-222-21-329-3-50-2-52-3-26-4-22-6-23-8-24-10-23-8-16-10-18-15-22-14-18-11-12-9-10-9-9-8-7-16-13-18-13-21-13-27-14-19-8-33-11-26-6-27-4-11-1h-52l-18 2-25 5-23 7-29 13-23 13-22 15-19 14-16 9-19 5h-10l-15-3-84-26-37-10-36-7-39-5-27-2-50-1-43 1-42 4-26 4-29 6-34 9-68 21-25 7-10 2h-8l-15-3-12-5-17-12-18-13-19-12-18-10-23-11-27-9-22-5-23-3z"/>
+                            <path transform="translate(341,709)" d="m0 0h130v90h89l2 2v128l-2 1h-89v90l-8 1h-120l-3-2v-89h-89l-1-1v-129l1-1h88l1-88z"/>
+                            <path transform="translate(1583,615)" d="m0 0 18 1 16 4 16 8 11 8 8 7 10 13 8 16 4 13 2 14-1 19-4 15-8 17-10 14-8 7-12 9-17 8-18 4h-24l-16-4-12-5-11-7-12-10-11-14-8-16-4-13-2-12v-14l4-20 5-12 7-12 9-11 11-10 15-9 17-6z"/>
+                            <path transform="translate(1721,757)" d="m0 0h15l17 3 13 5 11 6 10 8 7 6 10 13 8 16 4 13 2 20-3 21-4 12-8 15-8 10-9 9-10 7-14 7-17 5-5 1h-23l-17-4-11-5-12-7-13-11-8-10-9-16-6-20-1-7v-17l4-19 9-19 9-12 11-11 14-9 14-6 12-3z"/>
+                            <path transform="translate(1437,757)" d="m0 0h16l16 3 13 5 14 8 11 9 9 10 8 13 5 12 4 16 1 8v9l-3 19-6 16-6 10-8 10-5 5-9 8-14 8-13 5-14 3h-23l-17-4-17-8-13-10-9-9-9-13-7-15-4-15-1-7v-14l4-20 7-16 8-12 9-10 11-9 14-8 15-5z"/>
+                            <path transform="translate(1580,899)" d="m0 0h14l17 3 13 5 14 8 11 9 9 10 8 13 6 15 3 12 1 15-2 18-5 15-8 15-8 10-10 10-16 10-16 6-15 3h-21l-17-4-17-8-13-10-10-10-10-15-6-14-3-12-1-8v-14l3-17 5-13 9-16 11-12 9-8 16-9 15-5z"/>
+                            </svg>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="search-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Buscar</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="home-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Página Principal</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="folder-open-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Juegos Destacados</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="download-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Añadir Juego</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Ficha Técnica</span>
+                        </a>
+                      </li>
+                      <li class="navbar-item flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
+                          <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="settings-outline"></ion-icon>
+                          </div>
+                          <span class="link-text">Settings</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            
 
             </section>
 
