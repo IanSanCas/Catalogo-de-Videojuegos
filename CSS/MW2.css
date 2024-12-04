@@ -1,40 +1,32 @@
-.caja{
-
-    border: solid black;
-    border-radius: 8px;
-    width: 1000px;
-    height: 700px;
-    margin-bottom: 10px;
-    background-color: black;
-    
+.caja {
+  border: solid black;
+  border-radius: 8px;
+  width: 1000px;
+  height: 700px;
+  margin-bottom: 10px;
+  background-color: black;
 }
 
-.caja h2{
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    margin: 10px;
-    color: white;
-   
+.caja h2 {
+  font-family: "Jost", sans-serif;
+  margin: 10px;
+  color: white;
 }
 
-
-.caja img{
-    margin: 10px;
-    float: left;
-    border: solid red;
-    border-radius: 8px;
-    
+.caja img {
+  margin: 10px;
+  float: left;
+  border: solid red;
+  border-radius: 8px;
 }
 
-p{
-    border: solid red;
-    font-family: "Jost", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    margin: 10px;
-    text-align: justify;
-    color: white;
-
-   
+p {
+  border: solid red;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px;
+  text-align: justify;
+  color: white;
 }
