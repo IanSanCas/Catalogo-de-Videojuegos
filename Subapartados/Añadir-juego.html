@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cátlo de Videojuegos</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
-    <link rel="stylesheet" href="CSS/menu.css">
-    <link rel="stylesheet" href="CSS/centro.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/menu.css">
+    
+    <link rel="stylesheet" href="../CSS/añadir-juegos.css">
 
     <!-importe iconos menu-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -53,7 +54,7 @@
                         </a>
                       </li>
                       <li class="navbar-item flexbox-left">
-                        <a class="navbar-item-inner flexbox-left">
+                        <a href="../index.html" class="navbar-item-inner flexbox-left">
                           <div class="navbar-item-inner-icon-wrapper flexbox">
                             <ion-icon name="home-outline"></ion-icon>
                           </div>
@@ -69,7 +70,7 @@
                         </a>
                       </li>
                       <li class="navbar-item flexbox-left">
-                        <a href="Subapartados/Añadir-juego.html" class="navbar-item-inner flexbox-left">
+                        <a class="navbar-item-inner flexbox-left">
                           <div class="navbar-item-inner-icon-wrapper flexbox">
                             <ion-icon name="download-outline"></ion-icon>
                           </div>
@@ -98,48 +99,64 @@
 
             </section>
 
-        
+            <section id="centro">
+              <div class="form">
+              <form >
+                <h3>Nuevo Videojuego</h3>
+              
+                
+                <label class="info">
+                  <p>Título del Videojuego:</p> <br>
+                  <input type="text">
+                </label>
+                
+                <label class="info">
+                  <p>Desarrolladora:</p> <br>
+                  <input type="text">
+                </label>
+                
+             
+                <label class="info">
+                  <p>Año de Salida:</p> <br>
+                  <input type="date">
+                </label>
+               
+                
+                <label class="info">
+                  <p>Duración Videojuego (misiones principales):</p> <br>
+                  <input type="number">
+                </label>
+               
+                
+                <label class="info">
+                  <p>Género:</p> <br>
+                  <input type="text">
+                </label>
+                
+                <label class="info">
+                  <p>Carátula Videojuego:</p> <input type="file">
+                </label>
+                
+                <label class="info">
+                  <p>Breve reseña:</p> <br>
+                  <textarea name="" id=""></textarea>
+                </label>
+                
+                <label class="info">
+                <p>Resumen Trama Videojuego:</p> <br>
+                <textarea name="" id=""></textarea>
+                </label>
+                <br>
+                <label>
+                  <input type="submit">
+                  <input type="reset">
+                </label>
 
-            <section class="centro">
-
-                <h2>
-                    Juegos Destacados
-                </h2>
-                <div class="cards-grid">
-                    <a href="Subapartados/Cod-MW2.html"><div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('https://static.wikia.nocookie.net/cod/images/a/a0/Car%C3%A1tula_COD_MW2.jpg/revision/latest?cb=20100106104939&path-prefix=es');">
-        
-                            </div>
-                            <div class="flip-card-back1">
-                                
-                            </div>
-                        </div>
-                    </div></a>
-        
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('imgs/gta\ 3\ portada\ 1.jpeg');">
-        
-                            </div>
-                            <div class="flip-card-back2">
-                                
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-image: url('https://static.wikia.nocookie.net/godwar/images/8/89/300px-Portada_God_of_War_II_PS2.jpg/revision/latest/scale-to-width-down/300?cb=20101009113952&path-prefix=es');">
-        
-                            </div>
-                            <div class="flip-card-back3">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </form>
+            </div>
             </section>
+
+               
 
 
 
