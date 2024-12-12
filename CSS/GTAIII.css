@@ -22,6 +22,12 @@
   height: 500px;
 }
 
+.caja img {
+  margin: 10px;
+  float: left;
+  border-radius: 8px;
+}
+
 .pegi {
   margin: 10px;
   float: left;
