@@ -5,6 +5,13 @@
   height: 750px;
   margin-bottom: 10px;
   background-color: black;
+  box-shadow: 0 0 40px 10px black;
+}
+
+body{
+
+  background-image: url(../imgs/90536.jpg);
+  
 }
 
 .caja h2 {

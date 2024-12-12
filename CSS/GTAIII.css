@@ -1,3 +1,13 @@
+body{
+
+  background-image: url(../imgs/portada\ gta\ 3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
 .caja {
   border: solid black;
   border-radius: 8px;
@@ -5,6 +15,7 @@
   height: 700px;
   margin-bottom: 100px;
   background-color: black;
+  box-shadow: 0 0 40px 10px red;
 }
 
 .caja h2 {
