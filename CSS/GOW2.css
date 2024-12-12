@@ -1,0 +1,112 @@
+.caja {
+  border: solid black;
+  border-radius: 8px;
+  width: 1000px;
+  height: 750px;
+  margin-bottom: 10px;
+  background-color: black;
+  box-shadow: 0 0 40px 10px red;
+}
+
+body{
+
+  background-image: url(https://wallpapers.com/images/hd/god-of-war-kratos-art-e07hbg0495vfcehy.jpg);
+  
+}
+
+.caja h2 {
+  font-family: "Jost", sans-serif;
+  margin: 10px;
+  color: white;
+}
+
+.caja img {
+  margin: 10px;
+  float: left;
+  border-radius: 8px;
+}
+
+.portada{
+
+  border: solid red;
+  width: 325px;
+  height: 425px;
+}
+
+.caja span {
+
+  color: red;
+}
+
+p {
+
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 10px;
+  text-align: justify;
+  color: white;
+}
+
+
+
+.pic-ctn {
+  width: 100px;
+  height: 200px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(-250px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(250px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+
+  margin-left: 900px;
+  position: relative;
+  width: 100px;
+  height: 300px;
+  
+}
+
+.pic-ctn > img {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 300px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+img:nth-child(1) {
+  animation-delay: 0s;
+}
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
